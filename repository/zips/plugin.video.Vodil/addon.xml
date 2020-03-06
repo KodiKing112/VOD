@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.Vodil" name="Vod IL" version="1.2.8" provider-name="kodi senyor">
+<addon id="plugin.video.Vodil" name="Vod IL" version="1.2.9" provider-name="kodi senyor">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -14,4 +14,4 @@
     <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
     <platform>all</platform>
   </extension>
-</addon>
+</addon
