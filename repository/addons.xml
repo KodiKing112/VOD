@@ -114,5 +114,118 @@
 
 	</news>
   </extension>
-</addon>	
+</addon>
+	<addon id="plugin.video.movixws"
+	   name="Movix Live"
+	   version="1.5.4"
+	   provider-name="Movix">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.resolveurl" version="5.0.00"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Movix Live</summary>
+    <description lang="he">Movix Live</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+	<addon id="plugin.video.karaoketv"
+       name="KaraokeTV"
+       version="1.1.0"
+       provider-name="Hybrid\Blade\Donatello">
+  <requires>
+ <import addon="xbmc.python" version="2.1.0"/>
+ <import addon="script.module.beautifulsoup4" version="4.3.1" />
+ <import addon="script.module.requests" version="2.3.0" />
+ <import addon="script.module.html5lib" version="0.999.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">This plugin let you watch karaoke.</summary>
+    <description lang="en">
+    Watch karaoke.
+    For donations: https://goo.gl/5MLzGS
+	Donatello donations: http://donatellokodi.blogspot.co.il/2015/10/blog-post.html
+	</description>
+    <platform>all</platform>
+ <language>en</language>
+ <disclaimer> report any issues with this addon to Hybridmag12@gmail.com</disclaimer>
+  </extension>
+</addon>
+<addon id="plugin.video.MyYoutube"                                                                                                                                    
+	   name="MyYoutube"                      
+	   version="1.1.5"                                                                                                                                        
+	   provider-name="Thunder">
+	   <requires>
+    <import addon="script.module.urlresolver"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he"></summary>
+    <description lang="he">Youtube player</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.live.streamspro"
+       name="LiveStreamsPro"
+       version="2.9.4"
+       provider-name="Shani">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.dateutil" optional="true" />
+    <import addon="script.module.resolveurl" optional="true"/>
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.inputstreamhelper" optional="true"/>
+    <import addon="script.module.simplejson" />    
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.slproxy" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreamspro- shamelessly forked from livestreams but added many things</summary>
+    <description>
+        In addition to what livestreams allowed you to do, you can now,
+        1. call regex in regex,
+        2. multiple regex in page, regex in session, also htmlunescape responses
+        3. create session from one regex and pass onto next in line
+        4. save sessions to a file and open again later
+        5. write python code in .py file, put in the profile directory and then call from your regex.
+        6. use epoctime, guid and unpack as functions already defined.
+        7. Use it to post values to the pages to get the proper responses
+        8. support many headers, like origin, X-Requested-With
+        9. you can now append cookies in response and then read in regex using includeheaders
+        10. You can now link to another web url via your xml using externallink
+        11. support for google captcha, now you can show and then post the text
+        
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+	
 </addons>
