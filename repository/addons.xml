@@ -450,4 +450,20 @@ v5.2.14 (2017-01-23)
     </assets>
   </extension>
 </addon>
+<addon id="plugin.video.Vodil" name="Vod IL" version="1.2.9" provider-name="kodi senyor">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה לצפיה בסרטונים מיוטיוב</summary>
+    <description lang="he">הרחבה לצפיה בתכנים מיוטיוב</description>
+    <disclaimer lang="en">kodi senyor Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
 </addons>
