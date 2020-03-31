@@ -284,7 +284,7 @@
 </addon>
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.0.3"                                                                                                                                        
+	   version="1.0.9"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -297,14 +297,14 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness</summary>
+    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
     <description lang="en">All the media as fast as possiable</description>
     <platform>all</platform>
   </extension>
 </addon>
-	<addon id="plugin.video.allmoviesin"
+<addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.5.7"
+	   version="7.5.9"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -323,23 +323,7 @@
     <description lang="he">Victory :-) 2.0</description>
     <platform>all</platform>
   </extension>
-</addon>
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.0" provider-name="Kodi free">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="plugin.video.youtube"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <language>he</language>
-    <summary lang="he">הרחבה תוכן, שירות ועזר.</summary>
-    <description lang="he">הרחבה משמשת לקיצורים להרחבות ישראליות.ובנוסף נותנת תוכן המוזרם דרך הרחבות יוטיוב</description>
-    <disclaimer lang="en">Kodi free</disclaimer>
-    <platform>all</platform>
-  </extension>
-</addon>
+</addon>	
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
        version="1.1.0"
