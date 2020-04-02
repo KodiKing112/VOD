@@ -302,7 +302,6 @@
     <platform>all</platform>
   </extension>
 </addon>
-</addon>
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
 	   version="7.5.9"
