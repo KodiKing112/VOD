@@ -446,6 +446,22 @@ v0.12.9 (2018-04-16)
     <disclaimer lang="en">Kodi free</disclaimer>
     <platform>all</platform>
   </extension>
+</addon>
+<addon id="plugin.video.tide" name="Tide" version="0.0.3" provider-name="wahed">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.routing" version="0.2.0"/>
+        <import addon="script.module.requests" version="2.12.4"/>
+        <import addon="script.module.beautifulsoup4" version="4.6.2"/> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">sport event streaming</summary>
+        <description lang="en">sport event streaming</description>
+    </extension>
 </addon>	
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
@@ -857,6 +873,57 @@ v5.2.14 (2017-01-23)
         <banner>resources/banner.jpg</banner>
         <logo>resources/logo.png</logo>
     </assets>
+  </extension>
+</addon>
+<addon id="script.autoruns"
+       name="Autoruns"
+       version="1.0.1"
+       provider-name="fightnight">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/> 
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+		<forum>http://forum.kodi.tv/showthread.php?tid=223015</forum>
+		<source>https://github.com/fightnight/fightnight-addons/tree/master/script.autoruns</source>
+		<summary lang="en">Disable startup services on Kodi</summary>
+		<summary lang="pt">Desactive serviços do arranque no Kodi</summary>
+		<description lang="en">You can disable startup services, improving Kodi internal speed.</description>
+		<description lang="pt">Pode desactivar serviços do arranque, melhorando a velocidade interna do Kodi.</description>
+		<disclaimer lang="en">Opensource addon not endorsed with Team Kodi.</disclaimer>
+		<disclaimer lang="pt">Addon opensource não afliado com a Equipa Kodi.</disclaimer>
+    </extension>
+</addon>
+<addon	id="script.disclaimer" 
+		name="Disclaimer" 
+		version="0.0.3" 
+		provider-name="[COLOR dodgerblue][I]Barroni[/I][/COLOR]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="startup.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR dodgerblue]Disclaimer[/COLOR]</summary>
+    <description lang="en">Provides a disclaimer for builds.</description>
+	<disclaimer lang="en">This Program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</disclaimer>
+    <platform>all</platform>
+	<license>http://www.gnu.org/copyleft/gpl.html </license>
+	<forum>http://</forum>
+	<website>https://</website>
+	<source>https://</source>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot1.png</screenshot>
+		<screenshot>resources/screenshot2.png</screenshot>
+		<screenshot>resources/screenshot3.png</screenshot>
+	</assets>
   </extension>
 </addon>
 	
