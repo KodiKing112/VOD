@@ -284,7 +284,7 @@
 </addon>
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.3.8"                                                                                                                                        
+	   version="1.4.7"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -295,14 +295,15 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
+    <summary lang="en">The single light in the Darkness</summary>
     <description lang="en">All the media as fast as possiable</description>
+	<disclaimer lang="en_US"> Thanks to Nixgates for parts of his code</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.7.1"
+	   version="7.7.3"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1002,6 +1003,24 @@ v5.2.14 (2017-01-23)
     </assets>
   </extension>
 </addon>
+<addon id="Script.pairall.pair"
+  name="pairall pair"
+  version="1.2" 
+  provider-name="pairall pair">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">pairall Menu System</summary>
+    <description lang="en">pairall Menu System</description>
+	<disclaimer>pairall Menu System</disclaimer>
+  </extension>
+</addon>	
 <addon
     id="skin.eminence.2.mod"
     version="999.3.0.4"
