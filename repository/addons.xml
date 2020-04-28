@@ -219,32 +219,29 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.filmix" version="1.2.8" name="Filmix" provider-name="vl.maksime">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0"/>
-        <import addon="script.module.simplemedia" version="1.2.2"/>
-        <import addon="script.module.filmix.cert" version="0.9.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
+	<addon id="plugin.video.filmix.net.dev"
+       name="Filmix.Net"
+       version="0.5.0k"
+       provider-name="Evgenii Devisok aka evgen_dev">
+	<requires>
+		<import addon="xbmc.python" version="2.5.0"/>
+		<import addon="script.module.xbmcup" version="0.1.1"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" provides="video" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="ru_RU">Смотреть онлайн фильмы и сериалы бесплатно</summary>
-        <description lang="ru_RU">Дополнение для онлайн-кинотеатра Filmix! В нашей базе 60000 разных видео, каждый из которых доступен вашему просмотру бесплатно и в отличном качестве. Выбирайте по вкусу и по настроению.</description>
-        <language>ru</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <forum>http://xbmc.ru/forum/showthread.php?t=16408</forum>
-        <website>https://filmix.co/</website>
-        <email>vl.maksime@gmail.com</email>
-        <source>https://github.com/vlmaksime/plugin.video.filmix</source>
-        <news>v1.2.8 (2020-01-08)[CR]- Исправлено отображение сезонов с одним эпизодом[CR][CR]v1.2.7 (2019-09-30)[CR]- Сертификаты вынесены в отдельное дополнение[CR][CR]v1.2.6 (2019-09-15)[CR]- Обновлены сертификаты[CR][CR]v1.2.5 (2019-08-20)[CR]- Обновлены сертификаты[CR]- Исправлена работа фильтров на Kodi 16 и старше[CR][CR]v1.2.4 (2019-08-11)[CR]- Для пользователей без авторизации максимальное качество установлено в 480p[CR]- Переделан раздел "Поиск". Добавлено контекстное меню для управления разделом[CR]- Исправлены выявленные ошибки[CR][CR]v1.2.3 (2019-08-07)[CR]- Восстановлена работа дополнения на системах с OpenSSL версии 1.1.0 и выше[CR][CR]v1.2.2 (2019-07-25)[CR]- Исправлена ошибка доступа к ресурсу[CR][CR]v1.2.1 (2019-07-24)[CR]- Исправлено получение ссылок на источник[CR]- Исправлена проблема с авторизацией на устройствах ATV[CR]- Добавлена поддержка дополнения Widget Manager (пока не найдется решение лучше)[CR][CR]v1.2.0 (2019-05-30)[CR]- Добавлен вывод фильтров в списке контента. Можно отключить в настройках[CR]- Реализовано формирование имен для совместимости с "Add To Lib"[CR]- Поправлено определение типа контента для некоторых сериалов[CR]- Исправлено отображение отметки о просмотре на Kodi 18[CR]- Исправлены выявленные ошибки[CR][CR]</news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <clearlogo>resources\media\clearlogo.png</clearlogo>
-        </assets>
-    </extension>
+		<news></news>
+		<summary>Filmix.Net</summary>
+		<description>
+			 Filmix.Net - Вашему вниманию полнометражное кино и телесериалы, мультфильмы, трейлеры.
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum>http://xbmc.ru/forum/showthread.php?t=11719</forum>
+		<email>xbmc@devisok.org</email>
+	</extension>
 </addon>
 <addon id="plugin.video.tivix.net" name="Tivix.net" version="2.4.0" provider-name="mrstealth, dandy">
     <requires>
@@ -410,6 +407,32 @@ http://www.ozbeceriksizler.com/forumdisplay.php?66-IPTV-Online-TV</description>
 
         Credits to CyberBoy_Ram for the thumbnails.</description>
     </extension>
+</addon>
+<addon id="script.module.7of9-swiftstreamz" name="7of9 Swift Streamz HD" version="2.2c" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">Cloned for 7of9 users from the Racc TvOne add-on. All credit must go to anyone involved in the Original Code</summary>
+    <description lang="en_gb">SwiftStreamz IPTV</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GPL-3.0</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
 </addon>	
 <addon id="plugin.video.karaoketv"
        name="KaraokeTV"
