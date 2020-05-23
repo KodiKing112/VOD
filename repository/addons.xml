@@ -281,7 +281,7 @@
 </addon>
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.6.4"                                                                                                                                        
+	   version="1.8.3"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -300,12 +300,11 @@
 </addon>
 <addon id="plugin.video.allmoviesin"
 	   name="ויקטורי 2.0"
-	   version="7.7.3"
+	   version="7.7.4"
 	   provider-name="Forky TEAM">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="script.module.requests"/>
-	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
@@ -318,7 +317,7 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.5" provider-name="Kodi free">
+<addon id="plugin.video.Serviceil" name="[COLOR aqua].Serviceil [/COLOR]" version="1.1.7" provider-name="Kodi free">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="plugin.video.youtube"/>
@@ -333,22 +332,6 @@
     <disclaimer lang="en">Kodi free</disclaimer>
     <platform>all</platform>
   </extension>
-</addon>
-<addon id="plugin.video.tide" name="Tide" version="0.0.3" provider-name="wahed">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-        <import addon="script.module.routing" version="0.2.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.beautifulsoup4" version="4.6.2"/> 
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">sport event streaming</summary>
-        <description lang="en">sport event streaming</description>
-    </extension>
 </addon>
 <addon id="plugin.video.OTV_MEDIA" name="OTV_MEDIA" version="4.6.2" provider-name="Orhan t">
     <requires>              
@@ -935,6 +918,45 @@ v5.2.14 (2017-01-23)
     <summary lang="en">pairall Menu System</summary>
     <description lang="en">pairall Menu System</description>
 	<disclaimer>pairall Menu System</disclaimer>
+  </extension>
+</addon>
+<addon id="script.hebivueguide" name="Ivue TV Guide" version="1.0.5" provider-name="iVue Tv Guide">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+		<import addon="plugin.video.idanplus" version="2.5.2"/>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.xmltodict"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+	<provides>video</provides>
+		<description lang="en">Final Release of Ivue Guide, simple free and effective, We hope you like it now with category intergration #teamiVue, Huge thanks to all coders out there for getting involved.</description>
+		<disclaimer lang="en">Final Release of Ivue Guide and is forked and based on FTV Guide, Dixie , Ivue ,Primeval, tommy winthers original code, </disclaimer>
+	</extension>
+</addon>
+<addon id="plugin.program.master_pen"                                                                                                                                    
+	   name="Masten Pen"                      
+	   version="6.4.9.2"                                                                                                                                        
+	   provider-name="The Pen Team">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="run.py">
+    <provides>executable</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">matster addon to update all</summary>
+    <description lang="en">matster addon to update all</description>
+    <platform>all</platform>
+
   </extension>
 </addon>	
 <addon
